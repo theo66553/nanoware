@@ -5,7 +5,7 @@ local library, object, global, typeface =
 	loadstring(game:HttpGet "https://github.com/fayvrit/Typeface/raw/refs/heads/main/Register.lua")()
 
 library.bindstr = global.json("decode", global.request {Url = "https://github.com/fayvrit/millionware/raw/refs/heads/main/bindstr.json"}.Body)
-library.accent = global.rgb(62, 255, 220)
+library.accent = global.rgb(115, 100, 215)
 library.menubind = Enum.KeyCode.Insert
 library.core = global.hui
 
@@ -967,7 +967,7 @@ library.info = function(self, info)
 		objects ['accent'] = objects ['element']:create("TextLabel", {
 			FontFace = library.boldfont,
 			Name = "accent",
-			TextColor3 = global.rgb(62, 255, 220),
+			TextColor3 = global.rgb(115, 100, 215),
 			TextTransparency = 1,
 			Text = info.title,
 			AutomaticSize = Enum.AutomaticSize.X,
@@ -2074,7 +2074,7 @@ library.keybind = function(self, info)
 
 				objects [global.lower(mode) .. '_accent'] = objects [global.lower(mode)]:create("TextLabel", {
 					FontFace = library.boldfont,
-					TextColor3 = global.rgb(62, 255, 220),
+					TextColor3 = global.rgb(115, 100, 215),
 					BorderColor3 = global.rgb(0, 0, 0),
 					TextTransparency = global.lower(mode) == global.lower(info.mode) and 0 or 1,
 					Text = mode,
@@ -3567,7 +3567,7 @@ library.dropdown = function(self, info)
 
 		objects ['content'] = objects ['drop']:create("ScrollingFrame", {
 			AutomaticCanvasSize = Enum.AutomaticSize.Y,
-			ScrollBarImageColor3 = global.rgb(62, 255, 220),
+			ScrollBarImageColor3 = global.rgb(115, 100, 215),
 			MidImage = "rbxassetid://121616077179803",
 			Active = true,
 			BorderColor3 = global.rgb(0, 0, 0),
