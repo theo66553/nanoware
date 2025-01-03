@@ -1,7 +1,7 @@
 local library, object, global, typeface = 
 	{pointers = {}, flags = {}, configs = {}, activekeys = {}, functions = {}, hud = {}, windows = {}, popups = {}, loaded = false}, 
 	{objects = {}, assets = {}, accents = {}, signals = {}, callbacks = {}}, 
-	loadstring(game:HttpGet "https://raw.githubusercontent.com/fayvrit/millionware/refs/heads/main/globals.lua")(),
+	loadstring(game:HttpGet "https://github.com/fayvrit/millionware/raw/321a5dc7e7b9c274fcbff6219573670e8f2d3ed2/globals.lua")(),
 	loadstring(game:HttpGet "https://github.com/fayvrit/Typeface/raw/refs/heads/main/Register.lua")()
 
 library.bindstr = global.json("decode", global.request {Url = "https://github.com/fayvrit/millionware/raw/refs/heads/main/bindstr.json"}.Body)
